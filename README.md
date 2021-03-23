@@ -1,5 +1,4 @@
 # metform-actions
-Euromada
 Appeler une action dans le plugin MetForm <br>
 fichier: plugins/metform/core/entries/action.php <br>
 function: insert() at line 681
