@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de devis</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet');
+
+        p, span, h1, h2, h3, h4, ol, li, ul, td, th {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {}
+
+        .page {
+            display: block;
+            padding-bottom: 40px;
+            padding-top: 20px;
+            color: white;
+            background-color: #003B80;
+        }
+
+        .header {
+            padding-left: 40px;
+        }
+
+        .header .row-flex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .row .f-auto {
+            flex: auto;
+            width: 150px;
+        }
+
+        .row .f-1 {
+            flex: 1;
+        }
+
+        .page .content {
+            margin-top: 25px;
+            min-height: 100px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-bottom: 80px;
+        }
+
+        .content > .content-wrapper {
+            padding-left: 15px;
+            word-wrap: normal;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid white;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <div class="row-flex">
+            <div class="f-auto">
+                <img src="{{logo}}" width="250" alt=""/>
+            </div>
+            <div class="f-1" style="background-color: yellow"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-wrapper">
+            <h1>DEMANDE DE DEVIS</h1>
+            <p>Maxime aliquam iure architecto suscipit modi possimus autem nam dolorem rem sequi minima recusandae
+                doloribus, magni optio in iusto quae quod ad ipsa eligendi impedit! Quia magnam iusto dolor facere.</p>
+            <table width="100%" border="1">
+                <tbody>
+                <tr>
+                    <th scope="col" width="60%">Designation</th>
+                    <th scope="col" width="50">Qte</th>
+                    <th scope="col">Prix HT</th>
+                </tr>
+                <tr>
+                    <td>{{category_car}} + {{country}}</td>
+                    <td align="center">{{qty}}</td>
+                    <td align="center">{{cost}} €</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right" style="padding-right: 10px">TOTAL TTC</td>
+                    <td align="center" bgcolor="#ffda10" style="font-size: 30px; color: black; font-weight: 900">
+                        {{cost}} €
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <p>
+                * Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptatum ullam sunt
+            </p>
+            <p style="text-align:center; margin-top: 40px">
+                <a href="{{link}}"
+                   style="margin-top: 10px; padding: 10px 15px 10px 15px; background-color: red; text-decoration: none; color: aliceblue">CONFIRMER
+                    LE DEVIS</a>
+            </p>
+        </div>
+    </div>
+
+    <p style="font-size:12px;text-align:center">XXXX XX Xxxxxx, Antananarivo 101 | Téléphone: XXX XX XX XXX XX <br>
+        Copyright© <span class="il">Euromada</span>. Tous les droits sont réservés.</p>
+</div>
+</body>
+</html>
